@@ -2,4 +2,4 @@
 
 export CFLAGS=-fPIC
 
-CONFIGURE_OPTIONS="--prefix=$PREFIX --with-apr=$APR_DIR"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --with-apr=$APR_DIR"
