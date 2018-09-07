@@ -8,7 +8,7 @@ config()
     # in order that anaconda3 packages are not found 
     # (for example iconv)
     #
-    export PATH="/bin:/usr/bin/:/usr/local/bin"
+    export PATH="/bin:/usr/bin/:/usr/local/bin:$(dirname $(command -v $CC))"
     ./configure --prefix="$PREFIX" --with-apr="$APR_DIR"
 
 }
